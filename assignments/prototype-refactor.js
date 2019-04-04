@@ -135,6 +135,7 @@ weapons: ["Staff of Shamalama"],
 language: "Common Tongue",
 heroDamage: -3
 });
+console.group('prototype-refactor.js \n')
 console.log(hero);
 
 console.log(villain);
@@ -142,7 +143,8 @@ console.log(villain);
 
 
 console.log(hero.useWeapon(villain.healthPoints,villain.name,hero.wasHit));
-console.log(villain.useWeapon(hero.healthPoints,hero.name,villain.wasHit)); 
+console.log(villain.useWeapon(hero.healthPoints,hero.name,villain.wasHit));
+console.groupEnd(); 
 // const mage = new Humanoid({
 //     createdAt: new Date(),
 //     dimensions: {
